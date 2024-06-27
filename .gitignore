@@ -11,6 +11,7 @@ bin/
 dist/
 build/
 !cmd/
+vendor/
 
 # Dependency directories (remove the "#" below if you want to check in vendor folder)
 #vendor/
