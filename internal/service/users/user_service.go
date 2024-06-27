@@ -1,10 +1,10 @@
 
-package service
+package users
 
 import (
+    "errors"
     "gocool/internal/model"
     "gocool/internal/repository"
-    "errors"
 )
 
 // UserService handles the business logic for user management

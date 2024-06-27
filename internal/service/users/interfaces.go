@@ -1,5 +1,5 @@
 
-package service
+package users
 
 import (
     "gocool/internal/model"
