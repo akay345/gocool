@@ -1,4 +1,4 @@
-package users
+package services
 
 import (
 	"errors"
@@ -25,7 +25,7 @@ func (e *EnachService) EnachCreate(user model.User) error {
 	}
 
 	// Create a new user
-	err = model.CreateUser(s.Repo.DB, user)
+	err = model.CreateUser(e.Repo.DB, user)
 	if err != nil {
 		return err
 	}

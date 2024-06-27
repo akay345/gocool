@@ -3,18 +3,18 @@ package controller
 import (
 	"encoding/json"
 	"gocool/internal/model"
-	"gocool/internal/service/users"
+	services "gocool/internal/service/users"
 	"net/http"
 	"strconv"
 )
 
 // UserController handles web requests for user operations
 type UserController struct {
-	UserService *users.UserService
+	UserService *services.UserService
 }
 
 // NewUserController creates a new instance of UserController
-func NewUserController(userService *users.UserService) *UserController {
+func NewUserController(userService *services.UserService) *UserController {
 	return &UserController{
 		UserService: userService,
 	}
